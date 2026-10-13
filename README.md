@@ -89,16 +89,7 @@ A comprehensive, first-principles deep learning mastery project building, traini
 │   └── training_curves.png
 ├── requirements.txt                    # Minimal environment dependencies
 ├── README.md                           # Documentation, results, and architecture analysis
-├── .gitignore                          # Standard Python & large-artifact filters
-├── build_step1.py                      # Reproducible builder for Step 1 (Theory & Hand Math)
-├── build_step2.py                      # Reproducible builder for Step 2 (2-Layer Net & MNIST)
-├── build_step3.py                      # Reproducible builder for Step 3 (Gradient Checking)
-├── build_step4.py                      # Reproducible builder for Step 4 (Activation Tournament)
-├── build_step5.py                      # Reproducible builder for Step 5 (Weight Initializations)
-├── build_step6.py                      # Reproducible builder for Step 6 (Failure Modes)
-├── build_step7.py                      # Reproducible builder for Step 7 (Momentum & Optimization)
-├── build_step8.py                      # Reproducible builder for Step 8 (PyTorch Parity)
-└── build_step9.py                      # Reproducible builder for Step 9 (Mastery Challenges)
+└── .gitignore                          # Standard Python & large-artifact filters
 ```
 
 ---
@@ -117,11 +108,8 @@ pip install -r requirements.txt
 jupyter notebook neural_network_from_scratch.ipynb
 ```
 
-### 3. Verify Gradient Check in One Line
-```python
-from build_step3 import gradient_check
-# Runs central finite difference check confirming relative error < 1e-7
-```
+### 3. Numerical Gradient Checking
+Execute Part 3 of `neural_network_from_scratch.ipynb` to run the two-sided finite difference check verifying analytical backpropagation gradients to $< 10^{-7}$ relative error.
 
 ---
 
